@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlim Oronia - Creative Developer & Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Charlim</span>
+                <span class="logo-accent">Oronia</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link active" data-section="profile">
+                        <i class="fas fa-user"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <i class="fas fa-info-circle"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <i class="fas fa-code"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Profile Section -->
+        <section id="profile" class="section active">
+            <div class="profile-hero">
+                <div class="profile-content">
+                    <div class="profile-image-container">
+                        <div class="profile-image">
+                            <div class="image-placeholder" id="profileImagePlaceholder">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <img id="profileImage" class="profile-img" style="display: none;" alt="Profile Picture">
+                            <div class="image-overlay">
+                                <div class="upload-btn" onclick="document.getElementById('profileImageInput').click()">
+                                    <i class="fas fa-camera"></i>
+                                    <span>Change Photo</span>
+                                </div>
+                            </div>
+                            <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
+                            <div class="floating-shapes">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                                <div class="shape shape-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Hey, I'm</span>
+                            <span class="title-name">Charlim Oronia</span>
+                            <span class="title-subtitle">Full-Stack Developer • Dancer • Data Analyst</span>
+                        </h1>
+                        <p class="hero-description">
+                            I create digital experiences that blend technical precision with artistic vision. 
+                            From coding elegant solutions to expressing creativity through dance, 
+                            I bring a unique perspective to every project.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="downloadDocument('cv')">
+                                <i class="fas fa-download"></i>
+                                Download CV
+                            </button>
+                            <button class="btn btn-secondary" onclick="downloadDocument('resume')">
+                                <i class="fas fa-file-pdf"></i>
+                                View Resume
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    <span class="title-accent">About</span> Me
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="text-block">
+                            <h3>My Journey</h3>
+                            <p>
+                                I'm a passionate full-stack developer with a unique background that combines 
+                                technical expertise with creative expression. My journey began with a fascination 
+                                for problem-solving and has evolved into a comprehensive skill set spanning 
+                                both frontend and backend development.
+                            </p>
+                        </div>
+                        <div class="text-block">
+                            <h3>Beyond Code</h3>
+                            <p>
+                                As an accomplished dancer, I believe that creativity and technical precision 
+                                go hand in hand. This artistic background has taught me the importance of 
+                                attention to detail, discipline, and the ability to see projects from multiple perspectives.
+                            </p>
+                        </div>
+                        <div class="text-block">
+                            <h3>Data & Insights</h3>
+                            <p>
+                                My expertise in data analytics allows me to bridge the gap between raw data 
+                                and meaningful insights, helping businesses make informed decisions. I enjoy 
+                                the challenge of finding patterns in complex datasets.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skills-showcase">
+                        <div class="skill-category">
+                            <h4>Development</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Design & Creative</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">UI/UX</span>
+                                <span class="skill-tag">Choreography</span>
+                                <span class="skill-tag">Performance</span>
+                                <span class="skill-tag">Creative Direction</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Analytics</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Data Visualization</span>
+                                <span class="skill-tag">Tableau</span>
+                                <span class="skill-tag">Power BI</span>
+                                <span class="skill-tag">Statistical Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    My <span class="title-accent">Projects</span>
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card featured">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack e-commerce solution with React, Node.js, and MongoDB</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Dashboard</h3>
+                            <p>Interactive analytics dashboard with real-time data visualization</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Tableau</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dance Studio App</h3>
+                            <p>Mobile app for dance class booking and choreography sharing</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Creative Portfolio</h3>
+                            <p>Interactive portfolio showcasing dance performances and digital art</p>
+                            <div class="project-tags">
+                                <span class="tag">WebGL</span>
+                                <span class="tag">Three.js</span>
+                                <span class="tag">Animation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-container">
+                <h2 class="section-title">
+                    Let's <span class="title-accent">Connect</span>
+                </h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>Email Me</h3>
+                            <p>charlimoronia34@gmail.com</p>
+                            <a href="mailto:charlimoronia34@gmail.com" class="contact-link">Send Message</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <h3>LinkedIn</h3>
+                            <p>Professional Network</p>
+                            <a href="https://linkedin.com/in/charlimoronia" class="contact-link">Connect</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <h3>GitHub</h3>
+                            <p>Code Repository</p>
+                            <a href="https://github.com/charlimoronia" class="contact-link">View Code</a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Send me a message</h3>
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Charlim Oronia. All rights reserved.</p>
+            <p>Built with passion for technology and creativity</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
